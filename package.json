@@ -4,7 +4,8 @@
   "description": "Atom-IDE support for HTML language",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint ./src",
+    "test": "npm run eslint"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/liuderchi/ide-html/issues"
   },
-  "homepage": "https://github.com/liuderchi/ide-html#readme"
+  "homepage": "https://github.com/liuderchi/ide-html#readme",
+  "devDependencies": {
+    "eslint": "^4.7.0"
+  }
 }
