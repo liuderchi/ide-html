@@ -1,16 +1,13 @@
 {
   "name": "ide-html",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Atom-IDE support for HTML language",
   "main": "src/main.js",
   "scripts": {
     "eslint": "eslint ./src",
     "test": "npm run eslint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/liuderchi/ide-html.git"
-  },
+  "repository": "https://github.com/liuderchi/ide-html",
   "keywords": [
     "atom-ide"
   ],
