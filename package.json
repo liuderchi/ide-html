@@ -22,5 +22,10 @@
   "homepage": "https://github.com/liuderchi/ide-html#readme",
   "devDependencies": {
     "eslint": "^4.7.0"
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.6.3",
+    "fuzzaldrin-plus": "^0.5.0",
+    "vscode-html-languageserver-bin": "^1.0.0"
   }
 }
