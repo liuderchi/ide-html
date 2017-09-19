@@ -1,15 +1,6 @@
-// const path = require('path')
+const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
-// const { filter } = require('fuzzaldrin-plus')
-// const cp = require('child_process')
 
-/**
- * HTML LanguageClient for IDE-Atom
- *
- * @method getGrammarScopes
- * @extends AutoLanguageClient
- * @return {class}
- */
 class HTMLLanguageClient extends AutoLanguageClient {
   getGrammarScopes () { return ['text.html.basic'] }
   getLanguageName () { return 'HTML' }
@@ -17,8 +8,13 @@ class HTMLLanguageClient extends AutoLanguageClient {
   getConnectionType() { return 'stdio' } // ipc, socket, stdio
 
   startServerProcess () {
-    // return cp.spawn('node', [require.resolve('vscode-html-languageserver-bin/htmlServerMain')])
-    return super.spawnChildNode([ require.resolve('node_modules/vscode-html-languageserver-bin/htmlServerMain'), '--stdio' ]) // --node-ipc, stdio, socket={number}
+    return super.spawnChildNode([
+      path.resolve(path.join(
+        __dirname,
+        '../node_modules/vscode-html-languageserver-bin/htmlServerMain'
+      )),
+      '--stdio',
+    ]) // --node-ipc, stdio, socket={number}
   }
 
   preInitialization (connection) {
