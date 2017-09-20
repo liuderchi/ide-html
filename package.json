@@ -9,7 +9,12 @@
   },
   "repository": "https://github.com/liuderchi/ide-html",
   "keywords": [
-    "atom-ide"
+    "atom-ide",
+    "html",
+    "html-parsing",
+    "ide",
+    "language-server-protocol",
+    "outline-view"
   ],
   "author": "Te-Chi Liu",
   "license": "MIT",
