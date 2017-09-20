@@ -1,6 +1,6 @@
 {
   "name": "ide-html",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Atom-IDE support for HTML language",
   "main": "src/main.js",
   "scripts": {
