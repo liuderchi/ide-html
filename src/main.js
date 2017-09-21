@@ -2,7 +2,7 @@ const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
 
 class HTMLLanguageClient extends AutoLanguageClient {
-  getGrammarScopes () { return ['text.html.basic'] }
+  getGrammarScopes () { return atom.config.get('ide-html.additionalGrammars').concat(['text.html.basic']); }
   getLanguageName () { return 'HTML' }
   getServerName () { return 'VSCODE-HTML-LANG-SERVER' }
   getConnectionType() { return 'stdio' } // ipc, socket, stdio

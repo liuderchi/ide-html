@@ -74,5 +74,13 @@
         "0.1.0": "provideOutlines"
       }
     }
+  },
+  "configSchema": {
+    "additionalGrammars": {
+      "type": "array",
+      "title": "Register Additional Grammars",
+      "default": [],
+      "description": "Register additional html grammars such as text.html.handlebars or text.html.mustache. \n Please note each must be in an array format. []"
+    }
   }
 }
