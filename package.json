@@ -80,7 +80,7 @@
       "type": "array",
       "title": "Register Additional Grammars",
       "default": [],
-      "description": "Register additional html grammars such as text.html.handlebars or text.html.mustache. \n Please note each must be in an array format. []"
+      "description": "**Experimental** Register additional html grammars such as text.html.handlebars or text.html.mustache. Add comma delimited values with no spaces. ex: text.html.handlebars,text.html.mustache"
     }
   }
 }
