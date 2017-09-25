@@ -20,7 +20,7 @@ Atom-IDE support for HTML language including Handlebars, Mustache.
 
 ## Requirements
 
-you need to install following requirements before installing `ide-html`:
+you need to install following requirements before installing [`ide-html`][apm-download-link]:
 
   - Atom editor *1.21.0-beta0* or higher version
   - Atom package [`atom-ide-ui`][atom-ide-ui]
@@ -30,14 +30,15 @@ you need to install following requirements before installing `ide-html`:
 
 > Why I could not download this Atom package?
 
-Please make sure you have installed all softwares in [*Requirement*](#requirements) section.
+Please make sure you have installed all softwares in [*Requirements*](#requirements) section.
 
 ---
 
-> I've installed ide-html, why there is still nothing shown in Outline View when html opened?
+> I've installed ide-html. Why there is still nothing shown in Outline View when html opened?
 
-Only HTML files *in the project tree view* will be handled by `ide-html`. <br/>
-Use Atom command `Outline View: Toggle` to show outline view.
+Please check the file exists in the *Project Tree View* so that it can be handled by [`ide-html`][apm-download-link].
+
+In addition, to show outline view, use Atom command `Outline View: Toggle`.
 
 ---
 
@@ -51,7 +52,7 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 
 
 ## Notes and References
-  - `ide-html` acts as a *client* of language server basing on [`atom-languageclient`][atom-languageclient]
+  - [`ide-html`][apm-download-link] acts as a *client* of language server basing on [`atom-languageclient`][atom-languageclient]
   - [`vscode-html-languageserver-bin`][vscode-html-languageserver-bin] acts as a *language server* and analyze your HTML in separate process
   - language servers and clients are talking with [Language Server Protocol (LSP)][lsp]
 
@@ -75,7 +76,7 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 [create-issue]: https://github.com/liuderchi/ide-html/issues/new "create-issue"
 
 [atom-languageclient]: https://github.com/atom/atom-languageclient "atom-languageclient"
-[vscode-html-languageserver-bin]: https://github.com/vscode-langservers/vscode-css-languageserver-bin "vscode-html-languageserver-bin"
+[vscode-html-languageserver-bin]: https://github.com/vscode-langservers/vscode-html-languageserver-bin "vscode-html-languageserver-bin"
 [lsp]: http://langserver.org/ "lsp"
 
 [mit-license]: https://liuderchi.mit-license.org/ "mit-license"
