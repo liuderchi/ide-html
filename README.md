@@ -4,7 +4,7 @@
 [![travis-status][travis-status]][travis-project]
 [![dependency-status][david-status]][david-project]
 
-Atom-IDE support for HTML language
+Atom-IDE support for HTML language including Handlebars, Mustache.
 
 ![demo-outline-1][demo-outline-1]
 
