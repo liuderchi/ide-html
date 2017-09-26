@@ -1,7 +1,7 @@
 {
   "name": "ide-html",
   "version": "0.1.2",
-  "description": "Atom-IDE support for HTML language",
+  "description": "Atom-IDE support for HTML language including Handlebars, Mustache",
   "main": "src/main.js",
   "scripts": {
     "eslint": "eslint ./src",
@@ -12,6 +12,9 @@
     "atom-ide",
     "html",
     "html-parsing",
+    "html-template",
+    "handlebars",
+    "mustache",
     "ide",
     "language-server-protocol",
     "outline-view"
@@ -78,9 +81,9 @@
   "configSchema": {
     "additionalGrammars": {
       "type": "array",
-      "title": "Register Additional Grammars",
+      "title": "Register Additional Grammars (Experimental)",
       "default": [],
-      "description": "**Experimental** Register additional html grammars such as text.html.handlebars or text.html.mustache. Add comma delimited values with no spaces. ex: text.html.handlebars,text.html.mustache"
+      "description": "Register additional html grammars such as **handlebars** or **mustache** in comma delimited format.</br>e.g. `text.html.handlebars, text.html.mustache`</br>Please do `Window:Reload` to apply changes."
     }
   }
 }
