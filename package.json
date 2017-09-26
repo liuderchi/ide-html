@@ -74,5 +74,13 @@
         "0.1.0": "provideOutlines"
       }
     }
+  },
+  "configSchema": {
+    "additionalGrammars": {
+      "type": "array",
+      "title": "Register Additional Grammars",
+      "default": [],
+      "description": "**Experimental** Register additional html grammars such as text.html.handlebars or text.html.mustache. Add comma delimited values with no spaces. ex: text.html.handlebars,text.html.mustache"
+    }
   }
 }
