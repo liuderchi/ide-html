@@ -1,8 +1,21 @@
 const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
+const { registerConfigOnChangeHandlers } = require('./util')
+
+registerConfigOnChangeHandlers()
 
 class HTMLLanguageClient extends AutoLanguageClient {
-  getGrammarScopes () { return atom.config.get('ide-html.additionalGrammars').concat(['text.html.basic']) }
+  getGrammarScopes () {
+    const {
+      additionalGrammars,
+      gohtmlSupport,
+      mustacheSupport,
+    } = atom.config.get('ide-html')
+    return ['text.html.basic']
+      .concat(gohtmlSupport ? 'text.html.gohtml' : [])
+      .concat(mustacheSupport ? 'text.html.mustache' : [])
+      .concat(additionalGrammars || [])
+  }
   getLanguageName () { return 'HTML' }
   getServerName () { return 'VSCODE-HTML-LANG-SERVER' }
   getConnectionType() { return 'stdio' } // ipc, socket, stdio
