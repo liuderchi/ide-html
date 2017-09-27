@@ -1,7 +1,7 @@
 {
   "name": "ide-html",
   "version": "0.2.0",
-  "description": "Atom-IDE support for HTML language including Handlebars, Mustache",
+  "description": "Atom-IDE for HTML, Go Template, Mustache and other Templates",
   "main": "src/main.js",
   "scripts": {
     "eslint": "eslint ./src",
@@ -13,6 +13,8 @@
     "html",
     "html-parsing",
     "html-template",
+    "gohtml",
+    "go-template",
     "handlebars",
     "mustache",
     "ide",
@@ -37,7 +39,9 @@
     "vscode-html-languageserver-bin": "^1.0.0"
   },
   "enhancedScopes": [
-    "text.html.basic"
+    "text.html.basic",
+    "text.html.gohtml",
+    "text.html.mustache"
   ],
   "consumedServices": {
     "linter-indie": {
@@ -83,7 +87,19 @@
       "type": "array",
       "title": "Register Additional Grammars (Experimental)",
       "default": [],
-      "description": "Register additional html grammars such as **handlebars** or **mustache** in comma delimited format.</br>e.g. `text.html.handlebars, text.html.mustache`</br>Please do `Window:Reload` to apply changes."
+      "description": "Register additional html grammars such as **PHP** or **JSP** in comma delimited format.</br>e.g. `text.html.php, text.html.jsp`."
+    },
+    "gohtmlSupport": {
+      "type": "boolean",
+      "title": "Go Template Language Support",
+      "default": true,
+      "description": "Support files with `.gohtml` extension."
+    },
+    "mustacheSupport": {
+      "type": "boolean",
+      "title": "Mustache, Handlebars Language Support",
+      "default": true,
+      "description": "Support files with `.mustache` `.handlebars` extension."
     }
   }
 }
