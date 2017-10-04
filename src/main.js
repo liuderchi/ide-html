@@ -4,11 +4,13 @@ const { registerConfigOnChangeHandlers } = require('./util')
 const { registerHelpCommands } = require('./help_cmd')
 const { showWelcomeNotification } = require('./welcome_notification')
 
-registerConfigOnChangeHandlers()
-registerHelpCommands()
-showWelcomeNotification()
-
 class HTMLLanguageClient extends AutoLanguageClient {
+  constructor() {
+    super()
+    registerConfigOnChangeHandlers()
+    registerHelpCommands()
+    showWelcomeNotification()
+  }
   getGrammarScopes () {
     const {
       additionalGrammars,
