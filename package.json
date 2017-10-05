@@ -40,6 +40,7 @@
   },
   "enhancedScopes": [
     "text.html.basic",
+    "text.html.ng",
     "text.html.gohtml",
     "text.html.mustache"
   ],
