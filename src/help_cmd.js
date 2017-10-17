@@ -10,25 +10,28 @@ const generateHelpMsg = () => {
   }`
 }
 
-const buttons = [
-  {
-    text: ' FAQ',
-    onDidClick: () => { shell.openExternal(`${packageJSON.repository.replace('.git', '')}#faq`) },
-    className: 'btn btn-info btn-lg icon-link selected',
-  },
-  {
-    text: ' Send Issue',
-    onDidClick: () => { shell.openExternal(`${packageJSON.repository.replace('.git', '')}/issues/new`) },
-    className: 'btn btn-info btn-lg icon-link',
-  },
-]
+const gerneateButtons = () => {
+  const repoUrl = packageJSON.homepage.replace(/#.*/, '').replace(/\/$/, '')
+  return [
+    {
+      text: ' FAQ',
+      onDidClick: () => { shell.openExternal(`${repoUrl}#faq`) },
+      className: 'btn btn-info btn-lg icon-link selected',
+    },
+    {
+      text: ' Send Issue',
+      onDidClick: () => { shell.openExternal(`${repoUrl}/issues/new`) },
+      className: 'btn btn-info btn-lg icon-link',
+    },
+  ]
+}
 
 const registerHelpCommands = () => {
   atom.commands.add('atom-workspace', `${packageJSON.name}:help`, () => {
     atom.notifications.addInfo(
       generateHelpMsg(),
       {
-        buttons,
+        buttons: gerneateButtons(),
         dismissable: true,
         icon: 'mortar-board',
       }
