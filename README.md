@@ -4,7 +4,7 @@
 [![travis-status][travis-status]][travis-project]
 [![dependency-status][david-status]][david-project]
 
-Atom-IDE support for HTML language including Handlebars, Mustache.
+[Atom-IDE][atom-ide] for HTML, Go Template, Mustache and other Templates.
 
 ![demo-outline-1][demo-outline-1]
 
@@ -20,9 +20,9 @@ Atom-IDE support for HTML language including Handlebars, Mustache.
 
 ## Requirements
 
-you need to install following requirements before installing [`ide-html`][apm-download-link]:
+Please install following requirements before installing [`ide-html`][apm-download-link]:
 
-  - Atom editor *1.21.0-beta0* or higher version
+  - [Latest Atom editor][atom] or version higher than *1.21.0-beta0*.
   - Atom package [`atom-ide-ui`][atom-ide-ui]
 
 
@@ -68,9 +68,11 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 [travis-project]: https://travis-ci.org/liuderchi/ide-html "travis-project"
 [david-status]: https://david-dm.org/liuderchi/ide-html.svg "david-status"
 [david-project]: https://david-dm.org/liuderchi/ide-html "david-project"
+[atom-ide]: https://ide.atom.io/ "atom-ide"
 [demo-outline-1]: https://user-images.githubusercontent.com/4994705/30626662-eb286e4e-9dfd-11e7-9bf6-24d4f5816e79.png "demo-outline-1"
 [demo-outline-2]: https://user-images.githubusercontent.com/4994705/30628148-1475ae8e-9e07-11e7-90f3-32231efb93b4.png "demo-outline-2"
 
+[atom]: https://atom.io/ "atom"
 [atom-ide-ui]: https://atom.io/packages/atom-ide-ui "atom-ide-ui"
 [CONTRIBUTING.md]: https://github.com/liuderchi/ide-html/blob/master/CONTRIBUTING.md "CONTRIBUTING.md"
 [create-issue]: https://github.com/liuderchi/ide-html/issues/new "create-issue"
