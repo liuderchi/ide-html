@@ -1,37 +1,37 @@
-const path = require('path')
 const { shell } = require('electron')
+const packageJSON = require('../package.json')
 
 const generateHelpMsg = () => {
-  const { version, packageCommands } = require(path.join(
-    __dirname,
-    '../package.json'
-  ))
-  return `## ide-html \n\n${version}\n${
-    Object.keys(packageCommands)
-      .map(cmd => `  - \`${cmd}\` ${packageCommands[cmd]}`)
+  const { name, version, atomCommands: commands } = packageJSON
+  return `## [${name}](https://atom.io/packages/${name}) \n\n${version}\n${
+    Object.keys(commands)
+      .map(cmd => `  - \`${cmd}\` ${commands[cmd]}`)
       .join('\n')
   }`
 }
 
-const buttons = [
-  {
-    text: ' FAQ',
-    onDidClick: () => { shell.openExternal('https://github.com/liuderchi/ide-html#faq') },
-    className: 'btn btn-info btn-lg icon-link selected',
-  },
-  {
-    text: ' Send Issue',
-    onDidClick: () => { shell.openExternal('https://github.com/liuderchi/ide-html/issues/new') },
-    className: 'btn btn-info btn-lg icon-link',
-  },
-]
+const gerneateButtons = () => {
+  const repoUrl = packageJSON.homepage.replace(/#.*/, '').replace(/\/$/, '')
+  return [
+    {
+      text: ' FAQ',
+      onDidClick: () => { shell.openExternal(`${repoUrl}#faq`) },
+      className: 'btn btn-info btn-lg icon-link selected',
+    },
+    {
+      text: ' Send Issue',
+      onDidClick: () => { shell.openExternal(`${repoUrl}/issues/new`) },
+      className: 'btn btn-info btn-lg icon-link',
+    },
+  ]
+}
 
 const registerHelpCommands = () => {
-  atom.commands.add('atom-workspace', 'ide-html:help', () => {
+  atom.commands.add('atom-workspace', `${packageJSON.name}:help`, () => {
     atom.notifications.addInfo(
       generateHelpMsg(),
       {
-        buttons,
+        buttons: gerneateButtons(),
         dismissable: true,
         icon: 'mortar-board',
       }

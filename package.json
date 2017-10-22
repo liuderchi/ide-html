@@ -82,7 +82,7 @@
       }
     }
   },
-  "packageCommands": {
+  "atomCommands": {
     "ide-html:help": "Provides help information and descriptions of commands."
   },
   "configSchema": {
