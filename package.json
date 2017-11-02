@@ -1,6 +1,6 @@
 {
   "name": "ide-html",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Atom-IDE for HTML, Go Template, Mustache and other Templates",
   "main": "src/main.js",
   "scripts": {
