@@ -78,11 +78,11 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-atom-languageclient@^0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.6.3.tgz#2a983f7255adfe01fcf186cbfdec134b5897e951"
+atom-languageclient@^0.6.7:
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.6.7.tgz#d189c7f5c4cb225c02ebb177bf9e8dbf32a25af5"
   dependencies:
-    vscode-jsonrpc "^3.3.1"
+    vscode-jsonrpc "^3.4.1"
 
 babel-code-frame@^6.22.0:
   version "6.26.0"
@@ -813,9 +813,13 @@ vscode-html-languageservice@^2.0.5:
     vscode-nls "^2.0.2"
     vscode-uri "^1.0.1"
 
-vscode-jsonrpc@^3.3.1, vscode-jsonrpc@^3.4.0:
+vscode-jsonrpc@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.4.0.tgz#aa95ac583bf31d80f725d57c27c09f4c2cfe9fa9"
+
+vscode-jsonrpc@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.4.1.tgz#e2e0b9e121f71a2b5448058a34a3aef8376a5e91"
 
 vscode-languageserver-protocol@^3.4.1:
   version "3.4.1"
