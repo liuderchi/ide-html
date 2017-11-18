@@ -1,9 +1,17 @@
+const packageJSON = require('../package.json')
+
 const registerConfigOnChangeHandlers = () => {
   atom.config.onDidChange('ide-html.additionalGrammars', () =>
     promptUserReloadAtom('Reload `ide-html` to apply additional grammars')
   )
   atom.config.onDidChange('ide-html.jspSupport', () => promptUserReloadAtom() )
   atom.config.onDidChange('ide-html.mustacheSupport', () => promptUserReloadAtom() )
+}
+
+const registerOpenSettingsCommand = () => {
+  atom.commands.add('atom-workspace', `${packageJSON.name}:open-settings`, () => {
+    atom.workspace.open(`atom://config/packages/${packageJSON.name}`)
+  })
 }
 
 const promptUserReloadAtom = (msg = 'Reload `ide-html` to apply changes') => {
@@ -22,5 +30,6 @@ const promptUserReloadAtom = (msg = 'Reload `ide-html` to apply changes') => {
 
 module.exports = {
   registerConfigOnChangeHandlers,
+  registerOpenSettingsCommand,
   promptUserReloadAtom,
 }

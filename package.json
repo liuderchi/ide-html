@@ -87,7 +87,8 @@
     }
   },
   "atomCommands": {
-    "ide-html:help": "Provides help information and descriptions of commands."
+    "ide-html:help": "Provides help information and descriptions of commands.",
+    "ide-html:open-settings": "Open settings page."
   },
   "configSchema": {
     "additionalGrammars": {

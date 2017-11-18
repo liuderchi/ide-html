@@ -34,10 +34,7 @@ const settingsButton = [
   {
     text: ' Open Settings Page',
     onDidClick: () => {
-      atom.commands.dispatch(
-        atom.views.getView(atom.workspace.getActivePane()),
-        'settings-view:install-packages-and-themes'
-      )
+      atom.workspace.open('atom://config/install/package:atom-ide-ui')
     },
     className: 'btn btn-success btn-lg icon-tools',
   },
