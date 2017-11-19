@@ -5,7 +5,8 @@
   "main": "src/main.js",
   "scripts": {
     "eslint": "eslint ./src",
-    "test": "npm run eslint"
+    "test": "npm run eslint",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "repository": "https://github.com/liuderchi/ide-html",
   "keywords": [
@@ -31,7 +32,10 @@
   },
   "homepage": "https://github.com/liuderchi/ide-html#readme",
   "devDependencies": {
-    "eslint": "^4.7.0"
+    "@commitlint/cli": "^5.0.1",
+    "@commitlint/config-angular": "^5.0.1",
+    "eslint": "^4.7.0",
+    "husky": "^0.14.3"
   },
   "dependencies": {
     "atom-languageclient": "^0.6.7",
