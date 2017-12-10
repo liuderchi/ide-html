@@ -163,11 +163,11 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-atom-languageclient@^0.6.7:
-  version "0.6.7"
-  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.6.7.tgz#d189c7f5c4cb225c02ebb177bf9e8dbf32a25af5"
+atom-languageclient@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.7.2.tgz#9959c584569c48d7be22a995de1a12b5f02c9df6"
   dependencies:
-    vscode-jsonrpc "^3.4.1"
+    vscode-jsonrpc "^3.5.0"
 
 babel-code-frame@^6.22.0:
   version "6.26.0"
@@ -537,10 +537,6 @@ fs.realpath@^1.0.0:
 functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
-
-fuzzaldrin-plus@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/fuzzaldrin-plus/-/fuzzaldrin-plus-0.5.0.tgz#ef5f26f0c2fc7e9e9a16ea149a802d6cb4804b1e"
 
 get-stdin@^4.0.1:
   version "4.0.1"
@@ -1329,9 +1325,9 @@ vscode-jsonrpc@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.4.0.tgz#aa95ac583bf31d80f725d57c27c09f4c2cfe9fa9"
 
-vscode-jsonrpc@^3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.4.1.tgz#e2e0b9e121f71a2b5448058a34a3aef8376a5e91"
+vscode-jsonrpc@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.5.0.tgz#87239d9e166b2d7352245b8a813597804c1d63aa"
 
 vscode-languageserver-protocol@^3.4.1:
   version "3.4.1"
