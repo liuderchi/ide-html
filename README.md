@@ -1,5 +1,7 @@
 # ide-html
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/liuderchi/ide-html.svg)](https://greenkeeper.io/)
+
 [![apm-download-count][apm-download-count]][apm-download-link]
 [![travis-status][travis-status]][travis-project]
 [![dependency-status][david-status]][david-project]
