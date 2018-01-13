@@ -32,13 +32,13 @@
   },
   "homepage": "https://github.com/liuderchi/ide-html#readme",
   "devDependencies": {
-    "@commitlint/cli": "^5.0.1",
-    "@commitlint/config-angular": "^5.0.1",
+    "@commitlint/cli": "^6.0.2",
+    "@commitlint/config-angular": "^6.0.2",
     "eslint": "^4.7.0",
     "husky": "^0.14.3"
   },
   "dependencies": {
-    "atom-languageclient": "^0.7.2",
+    "atom-languageclient": "^0.8.0",
     "vscode-html-languageserver-bin": "^1.0.0"
   },
   "enhancedScopes": [
