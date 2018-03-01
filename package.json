@@ -38,7 +38,7 @@
     "husky": "^0.14.3"
   },
   "dependencies": {
-    "atom-languageclient": "^0.8.0",
+    "atom-languageclient": "^0.9.1",
     "vscode-html-languageserver-bin": "^1.0.0"
   },
   "enhancedScopes": [
