@@ -2,7 +2,6 @@ const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
 const { registerConfigOnChangeHandlers, registerOpenSettingsCommand } = require('./util')
 const { registerHelpCommands } = require('./help_cmd')
-const { showWelcomeNotification } = require('./welcome_notification')
 
 class HTMLLanguageClient extends AutoLanguageClient {
   constructor() {
@@ -10,7 +9,6 @@ class HTMLLanguageClient extends AutoLanguageClient {
     registerConfigOnChangeHandlers()
     registerOpenSettingsCommand()
     registerHelpCommands()
-    showWelcomeNotification()
   }
   getGrammarScopes () {
     const {
