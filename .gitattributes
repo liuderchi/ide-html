@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+/.github export-ignore
+/.eslintignore export-ignore
+/.eslintrc.yml export-ignore
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/.renovaterc.json export-ignore
+/.travis.yml export-ignore
+/CONTRIBUTING.md export-ignore
+/yarn.lock export-ignore
