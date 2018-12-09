@@ -40,7 +40,8 @@
   "enhancedScopes": [
     "text.html.basic",
     "text.html.gohtml",
-    "text.html.mustache"
+    "text.html.mustache",
+    "text.html.php"
   ],
   "consumedServices": {
     "linter-indie": {
@@ -90,7 +91,7 @@
       "type": "array",
       "title": "Register Additional Grammars (Experimental)",
       "default": [],
-      "description": "Register additional html grammars such as **PHP** or **JSP** in comma delimited format.</br>e.g. `text.html.php, text.html.jsp`."
+      "description": "Register additional html grammars such as **JSP** in comma delimited format.</br>e.g. `text.html.jsp`."
     },
     "gohtmlSupport": {
       "type": "boolean",
