@@ -104,6 +104,12 @@
       "title": "Mustache, Handlebars Language Support",
       "default": true,
       "description": "Support files with `.mustache` `.handlebars` extension."
+    },
+    "phphtmlSupport": {
+      "type": "boolean",
+      "title": "PHP Template Language Support",
+      "default": true,
+      "description": "Support files with `.php` extension."
     }
   }
 }
