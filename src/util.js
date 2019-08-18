@@ -6,6 +6,7 @@ const registerConfigOnChangeHandlers = () => {
   )
   atom.config.onDidChange('ide-html.jspSupport', () => promptUserReloadAtom() )
   atom.config.onDidChange('ide-html.mustacheSupport', () => promptUserReloadAtom() )
+  atom.config.onDidChange('ide-html.phphtmlSupport', () => promptUserReloadAtom())
 }
 
 const registerOpenSettingsCommand = () => {

@@ -15,10 +15,12 @@ class HTMLLanguageClient extends AutoLanguageClient {
       additionalGrammars,
       gohtmlSupport,
       mustacheSupport,
+      phphtmlSupport,
     } = atom.config.get('ide-html')
-    return ['text.html.basic', 'text.html.php']
+    return ['text.html.basic']
       .concat(gohtmlSupport ? 'text.html.gohtml' : [])
       .concat(mustacheSupport ? 'text.html.mustache' : [])
+      .concat(phphtmlSupport ? 'text.html.php' : [])
       .concat(additionalGrammars || [])
   }
   getLanguageName () { return 'HTML' }
