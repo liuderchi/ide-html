@@ -34,7 +34,7 @@
     "eslint": "^7.0.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.9.8",
+    "atom-languageclient": "^1.0.0",
     "vscode-html-languageserver-bin": "^1.4.0"
   },
   "enhancedScopes": [
