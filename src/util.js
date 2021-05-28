@@ -1,6 +1,8 @@
-const packageJSON = require('../package.json')
+'use babel'
 
-const registerConfigOnChangeHandlers = () => {
+import packageJSON from '../package.json'
+
+export const registerConfigOnChangeHandlers = () => {
   atom.config.onDidChange('ide-html.additionalGrammars', () =>
     promptUserReloadAtom('Reload `ide-html` to apply additional grammars')
   )
@@ -9,13 +11,13 @@ const registerConfigOnChangeHandlers = () => {
   atom.config.onDidChange('ide-html.phphtmlSupport', () => promptUserReloadAtom())
 }
 
-const registerOpenSettingsCommand = () => {
+export const registerOpenSettingsCommand = () => {
   atom.commands.add('atom-workspace', `${packageJSON.name}:open-settings`, () => {
     atom.workspace.open(`atom://config/packages/${packageJSON.name}`)
   })
 }
 
-const promptUserReloadAtom = (msg = 'Reload `ide-html` to apply changes') => {
+export const promptUserReloadAtom = (msg = 'Reload `ide-html` to apply changes') => {
   const buttons = [{
     text: 'Reload',
     onDidClick: () => atom.reload(),
@@ -27,10 +29,4 @@ const promptUserReloadAtom = (msg = 'Reload `ide-html` to apply changes') => {
       dismissable: true,
     }
   )
-}
-
-module.exports = {
-  registerConfigOnChangeHandlers,
-  registerOpenSettingsCommand,
-  promptUserReloadAtom,
 }

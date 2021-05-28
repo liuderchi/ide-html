@@ -4,8 +4,8 @@
   "description": "Atom-IDE for HTML, Go Template, Mustache and other Templates",
   "main": "src/main.js",
   "scripts": {
-    "eslint": "eslint ./src",
-    "test": "npm run eslint"
+    "lint": "eslint ./src",
+    "ci": "npm run lint"
   },
   "repository": "https://github.com/liuderchi/ide-html",
   "keywords": [
@@ -31,10 +31,10 @@
   },
   "homepage": "https://github.com/liuderchi/ide-html#readme",
   "devDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "^7.27.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.9.8",
+    "atom-languageclient": "^1.10.0",
     "vscode-html-languageserver-bin": "^1.4.0"
   },
   "enhancedScopes": [

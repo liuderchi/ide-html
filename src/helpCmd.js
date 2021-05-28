@@ -1,5 +1,7 @@
-const { shell } = require('electron')
-const packageJSON = require('../package.json')
+'use babel'
+
+import { shell } from 'electron'
+import packageJSON from '../package.json'
 
 const generateHelpMsg = () => {
   const { name, version, atomCommands: commands } = packageJSON
@@ -26,7 +28,7 @@ const gerneateButtons = () => {
   ]
 }
 
-const registerHelpCommands = () => {
+export const registerHelpCommands = () => {
   atom.commands.add('atom-workspace', `${packageJSON.name}:help`, () => {
     atom.notifications.addInfo(
       generateHelpMsg(),
@@ -37,9 +39,4 @@ const registerHelpCommands = () => {
       }
     )
   })
-}
-
-
-module.exports = {
-  registerHelpCommands,
 }
