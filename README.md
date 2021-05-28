@@ -1,7 +1,7 @@
 # ide-html
 
 [![apm-download-count][apm-download-count]][apm-download-link]
-[![travis-status][travis-status]][travis-project]
+[![ci-status][ci-status]][ci-link]
 [![dependency-status][david-status]][david-project]
 
 [Atom-IDE][atom-ide] for HTML, Go Template, Mustache and other Templates.
@@ -64,8 +64,8 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 
 [apm-download-count]: https://img.shields.io/apm/dm/ide-html.svg "apm-download-count"
 [apm-download-link]: https://atom.io/packages/ide-html "apm-download-link"
-[travis-status]: https://travis-ci.org/liuderchi/ide-html.svg?branch=master "travis-status"
-[travis-project]: https://travis-ci.org/liuderchi/ide-html "travis-project"
+[ci-status]: https://github.com/liuderchi/ide-html/actions/workflows/ci.yml/badge.svg "ci-status"
+[ci-link]: https://github.com/liuderchi/ide-html/actions "ci-link"
 [david-status]: https://david-dm.org/liuderchi/ide-html.svg "david-status"
 [david-project]: https://david-dm.org/liuderchi/ide-html "david-project"
 [atom-ide]: https://ide.atom.io/ "atom-ide"
@@ -74,7 +74,7 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 
 [atom]: https://atom.io/ "atom"
 [atom-ide-ui]: https://atom.io/packages/atom-ide-ui "atom-ide-ui"
-[CONTRIBUTING.md]: https://github.com/liuderchi/ide-html/blob/master/CONTRIBUTING.md "CONTRIBUTING.md"
+[CONTRIBUTING.md]: https://github.com/liuderchi/ide-html/blob/main/CONTRIBUTING.md "CONTRIBUTING.md"
 [create-issue]: https://github.com/liuderchi/ide-html/issues/new "create-issue"
 
 [atom-languageclient]: https://github.com/atom/atom-languageclient "atom-languageclient"

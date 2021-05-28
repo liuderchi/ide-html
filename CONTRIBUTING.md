@@ -25,7 +25,7 @@
   7. you may test your changes. For example:
 
       ```shell
-      npm run test
+      npm run ci
       ```
 
   8. commit the changes and push the branch you created to your remote
