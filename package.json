@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/liuderchi/ide-html#readme",
   "devDependencies": {
-    "eslint": "^7.27.0"
+    "eslint": "^8.0.0"
   },
   "dependencies": {
     "atom-languageclient": "^1.10.0",
