@@ -17,7 +17,7 @@ class HTMLLanguageClient extends AutoLanguageClient {
       mustacheSupport,
       phphtmlSupport,
     } = atom.config.get('ide-html')
-    return ['text.html.basic']
+    return ['text.html.basic', 'text.html.ng']
       .concat(gohtmlSupport ? 'text.html.gohtml' : [])
       .concat(mustacheSupport ? 'text.html.mustache' : [])
       .concat(phphtmlSupport ? 'text.html.php' : [])
